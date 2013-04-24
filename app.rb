@@ -9,8 +9,6 @@ configure :production do
   NewRelic::Agent.manual_start
 end
 
-Haml::Options.defaults[:format] = :html5
-
 get '/' do
-  haml :index
+  haml(:index, { :ugly => true, :format => :html5 })
 end
