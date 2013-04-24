@@ -1,5 +1,6 @@
 !!! html
 %html{lang: 'en'}
+  = ::NewRelic::Agent.browser_timing_header rescue ""
   %title Celebrate Boston
   %link{rel: 'stylesheet', type: 'text/css', href: 'assets/css/bootstrap.css'}
   %link{rel: 'stylesheet', type: 'text/css', href: 'assets/css/bootstrap-responsive.css'}
@@ -23,6 +24,4 @@
     .row-fluid
       .span4.offset2
         %h1 Coming Soon
-
-    / .container
-    /   %h1 Coming Soon
+    = ::NewRelic::Agent.browser_timing_footer rescue ""
