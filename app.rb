@@ -4,10 +4,12 @@ require 'haml'
 
 set :public_folder, File.dirname(__FILE__) + '/static'
 
-# configure :production do
+configure :production do
   require 'newrelic_rpm'
   NewRelic::Agent.manual_start
-# end
+end
+
+Haml::Options.defaults[:format] = :html5
 
 get '/' do
   haml :index
