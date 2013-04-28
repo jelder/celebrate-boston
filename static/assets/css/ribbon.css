@@ -1,0 +1,30 @@
+
+.ribbon:after, .ribbon:before {
+  margin-top:0.5em;
+  content: "";
+  border:1.5em solid #1955A6;
+  float:right;
+}
+
+.ribbon:after {
+  border-right-color:transparent;
+  float:right;
+
+}
+
+.ribbon:before {
+  float:left;
+  border-left-color:transparent;
+}
+
+.ribbon span {
+  background-color: #1955A6;
+  color: #FFD603;
+  font-family: Futura;
+  letter-spacing: 2px;
+  display:inline-block;
+  line-height:3em;
+  padding:0 1em;
+  margin-top:0.5em;
+  position:relative;
+}
