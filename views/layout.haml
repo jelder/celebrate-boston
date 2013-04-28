@@ -1,6 +1,6 @@
 !!! html
 %html{lang: 'en'}
-  = ::NewRelic::Agent.browser_timing_header rescue ""
+  = NewRelic::Agent.browser_timing_header rescue ""
   %head
     %title Celebrate Boston
     %link{rel: 'stylesheet', type: 'text/css', href: 'assets/css/bootstrap.min.css'}
@@ -32,4 +32,4 @@
 
     = yield
 
-    = ::NewRelic::Agent.browser_timing_footer rescue ""
+    = NewRelic::Agent.browser_timing_footer rescue ""
