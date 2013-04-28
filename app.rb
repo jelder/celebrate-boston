@@ -1,8 +1,9 @@
 require 'bundler'
 Bundler.require
-require "sinatra/reloader" if development?
 
 class CelebrateBoston < Sinatra::Base
+  require "sinatra/reloader" if development?
+
   # register Sinatra::Partial
   # enable :partial_underscores
 
@@ -10,9 +11,8 @@ class CelebrateBoston < Sinatra::Base
   set :public_folder, File.dirname(__FILE__) + '/static'
   set :pages, %w[qa mission contact]
 
-  configure :production do
-    require 'newrelic_rpm'
-    NewRelic::Agent.manual_start
+  configure do
+    ::NewRelic::Agent.manual_start
   end
 
   get '/' do
