@@ -9,7 +9,7 @@
     .span6
       %h4 Our Mission
       %p
-        Celebrate Boston honors those who were killed and those whose lives were changed forever in the Boston Marathon bombings on April 15, 2013. Together We Move Forward.
+        Celebrate Boston brings together food, music, and community to honor and support those who were killed and whose lives were changed forever by the Boston Marathon bombings. All proceedes will go to The One Fund. Together We Move Forward.
 
     .span6
       %h4 What are we doing, exactly?
@@ -22,14 +22,14 @@
         %button.btn.btn-primary{ type:"submit", value:"Subscribe", name:"subscribe"}
           Subscribe to Email Updates
 
-  %hr
+      %p.muted We promise not to spam you.
 
-  .footer
-    .pull-left
-      .fb-like{data: {href: "http://www.celebrate-boston.org", send: true, format: 'button_counter', width: 450, 'show-faces' => true }}
+.center
+  .center
+    .fb-like{data: {href: "http://www.celebrate-boston.org", send: true, layout: 'box_count', 'show-faces' => true }}
 
-    .pull-right
-      %a.twitter-share-button{href: "https://twitter.com/share", data: {url: "http://celebrate-boston.org", text: "#BostonStrong"  , size: "large"}}
-        Tweet
-      :javascript
-        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+    %a.twitter-share-button{href: "https://twitter.com/share", data: {url: "http://celebrate-boston.org", text: "I'm ready to celebrate Boston. #BostonStrong"  , size: "medium", count: "vertical"}}
+      Tweet
+    :javascript
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
