@@ -76,6 +76,7 @@ img.logotype {
   background-image: linear-gradient(#255694, #1e3e75);
   border-color: #1e3e75 #1e3e75 hsl(201, 100%, 25%);
   color: #FFD603 !important;
+  font-weight: bold;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
   -webkit-font-smoothing: antialiased;
 }
