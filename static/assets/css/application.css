@@ -2,6 +2,16 @@
   Blue Hex # is 1955A6 and the yellow hex # is FFD603.
 */
 
+@font-face {
+  font-family: 'bauertopic';
+  src: url('/assets/font/bauertopic-medium-webfont.eot') format('eot'),;
+  src: url('/assets/font/bauertopic-medium-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/assets/font/bauertopic-medium-webfont.woff') format('woff'),
+       url('/assets/font/bauertopic-medium-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Non-black text */
 body {
   color: #130f30;
@@ -52,4 +62,29 @@ body {
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
+}
+
+img.ribbon {
+  -webkit-filter: drop-shadow(4px 5px 10px rgba(0,0,0,0.45));
+     -moz-filter: drop-shadow(4px 5px 10px rgba(0,0,0,0.45));
+      -ms-filter: drop-shadow(4px 5px 10px rgba(0,0,0,0.45));
+       -o-filter: drop-shadow(4px 5px 10px rgba(0,0,0,0.45));
+          filter: drop-shadow(4px 5px 10px rgba(0,0,0,0.45));
+}
+
+img.logotype {
+  margin-top: 20%;
+}
+
+.banner {
+  margin: 30px 30px 10px 30px; /* top right bottom left */
+  background-image: url('/assets/img/banner.png') ;
+  background-repeat: no-repeat;
+  color: #FFD603;
+  font-family: bauertopic;
+  font-size: 14pt;
+  letter-spacing: 1.6px;
+  line-height: 31px;
+  width: 226px;
+  text-align: center;
 }
